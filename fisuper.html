@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Deluxe Room - Shivom Hotel</title>
+    <style>
+        body.dark-theme {
+            background-color: #0d0d0d;
+            color: #f0f0f0;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 2px solid #333;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #00ffc3;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: #f0f0f0;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00ffc3;
+        }
+
+        .room-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+        }
+
+        .room-info img {
+            width: 90%;
+            max-width: 650px;
+            border-radius: 16px;
+            box-shadow: 0 0 25px rgba(0, 255, 195, 0.3);
+            margin-bottom: 40px;
+        }
+
+        .details {
+            max-width: 800px;
+            text-align: center;
+            background: #1a1a1a;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 0 20px rgba(255,255,255,0.1);
+        }
+
+        .details h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #00ffc3;
+        }
+
+        .details p {
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+
+        .details ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 35px;
+            font-size: 1.1rem;
+        }
+
+        .details ul li {
+            margin: 10px 0;
+            font-weight: 500;
+        }
+
+        .details ul li::before {
+            content: "\2022";
+            color: #00ffc3;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        .book-btn {
+            background-color: #00ffc3;
+            color: #0d0d0d;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.3s ease;
+        }
+
+        .book-btn:hover {
+            background-color: #00e6b2;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="dark-theme">
+    <header>
+        <h1>Shivom Hotel</h1>
+        <nav>
+            <a href="fullinfodelux.html">Deluxe</a>
+            <a href="fisuper.html">Super Deluxe</a>
+            <a href="fifamily.html">Family Suite</a>
+            <a href="fivip.html">VIP Suite</a>
+        </nav>
+    </header>
+    <main>
+        <section class="room-info">
+            <img src="delux.jpg" alt="Super Deluxe Room">
+            <div class="details">
+                <h2>Super Deluxe Room</h2>
+                <p>Experience luxury in our well-furnished super deluxe rooms with all modern amenities and most comfort.</p>
+                <ul>
+                    <li>King-size bed</li>
+                    <li>Complimentary breakfast</li>
+                    <li>Complimentary lunch</li>
+                    <li>Spa</li>
+                    <li>Kitchen</li>
+                    <li>Free WiFi</li>
+                    <li>Smart TV</li>
+                    <li>City View</li>
+                </ul>
+                <button class="book-btn" onclick="bookNow()">Book Now</button>
+            </div>
+        </section>
+    </main>
+    <script>
+        function bookNow() {
+            alert('Booking feature coming soon!');
+        }
+    </script>
+</body>
+</html>
